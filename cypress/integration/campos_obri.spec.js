@@ -30,20 +30,3 @@ context('required fields', function() {
         });
     })
 });
-
-it.skip('required field', function() {
-
-    var signup = new SignupPage()
-
-    signup.go()
-    signup.submit()
-    signup.alertMessageShouldBe('É necessário informar o nome')
-    signup.alertMessageShouldBe('É necessário informar o CPF')
-    signup.alertMessageShouldBe('É necessário informar o email')
-    signup.alertMessageShouldBe('É necessário informar o CEP')
-    signup.alertMessageShouldBe('É necessário informar o número do endereço')
-    signup.alertMessageShouldBe('Selecione o método de entrega')
-    signup.alertMessageShouldBe('Adicione uma foto da sua CNH')
-
-    
-}); 
